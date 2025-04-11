@@ -50,6 +50,7 @@ def chat(
 ) -> None:
     """
     Start an interactive chat session with the Gemini AI.
+    Type 'file <filename>' to attach a file to your message.
     """
     # Set API key from parameter if provided
     if api_key:
@@ -69,6 +70,9 @@ def chat(
         
         # Display welcome message
         display_welcome()
+        console.print("[dim]Type 'file <filename>' to attach a file to your message.[/dim]")
+        console.print("[dim]Type 'help' for more information.[/dim]")
+        console.print("---")
                 
         # Main chat loop
         while True:
@@ -79,8 +83,27 @@ def chat(
             if user_input.lower().strip() in config.EXIT_COMMANDS:
                 console.print("[bold blue]Goodbye![/bold blue]")
                 break
+                        
+            # Check for file attachment command
+            if user_input.lower().startswith("file "):
+                file_path = user_input[5:].strip()
+                if not file_path:
+                    console.print("[bold red]Error: Please specify a file name[/bold red]")
+                    continue
+                
+                if not os.path.exists(file_path):
+                    console.print(f"[bold red]Error: File not found: {file_path}[/bold red]")
+                    continue
+                
+                # Process file
+                try:
+                    response = client.process_file(file_path)
+                    display_response(response)
+                except Exception as e:
+                    console.print(f"[bold red]Error: {str(e)}[/bold red]")
+                continue
             
-            # Send message to Gemini and get response
+            # Regular message handling
             try:
                 response = client.send_message(user_input)
                 display_response(response)

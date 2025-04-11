@@ -192,3 +192,56 @@ class GeminiClient:
             error_msg = f"Error in processing: {str(e)}"
             self.logger.error(error_msg)
             return error_msg
+
+    def process_file(self, file_path: str) -> str:
+        """
+        Process a file and create/update the survey.
+        
+        Args:
+            file_path: Path to the file to attach (must be in current directory)
+            
+        Returns:
+            The model's response text
+        """
+        try:
+            # Log the user's message and file
+            self.logger.info(f"USER: file: {file_path}")
+            
+            # Read the file content as bytes
+            with open(file_path, 'rb') as file:
+                file_bytes = file.read()
+            
+            # Determine MIME type based on file extension
+            mime_type = 'application/octet-stream'  # Default MIME type
+            if file_path.lower().endswith('.pdf'):
+                mime_type = 'application/pdf'
+            else: 
+                return "Unspported file format, please use a PDF file"
+            
+            # Create content parts with both the file and the message
+            contents = [
+                types.Part.from_bytes(data=file_bytes, mime_type=mime_type),
+                "Attached document is a survey, please extract the content of the survey and return it as a text"
+            ]
+            
+            # Send the message and get the response
+            response = self.client.models.generate_content(
+                model=config.GEMINI_MODEL,
+                contents=contents
+            )
+            self.logger.info(f"AI: {response.text}")
+
+            response2 = self.chat.send_message(f"Use below information to create a survey, take a note of missing information and ask missing information once at a time: {response.text}")
+
+            # Return the final response text
+            self.logger.info(f"AI: {response2.text}")
+            return response2.text
+            
+        except FileNotFoundError:
+            error_msg = f"File not found: {file_path}"
+            self.logger.error(error_msg)
+            return error_msg
+        except Exception as e:
+            error_msg = f"Error in processing: {str(e)}"
+            self.logger.error(error_msg)
+            return error_msg

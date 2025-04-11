@@ -1,0 +1,3916 @@
+{
+    "_v": "2.0.0",
+    "_d": "2025-04-09T11:12:35.2100728Z",
+    "id": 24,
+    "name": "LiveBetaTest_Version2",
+    "version": 23,
+    "useS2": true,
+    "settings": {
+        "COMPLETION_QUESTION": "COMPLETE",
+        "PROGRESSBARSTARTQUESTION": "Q1",
+        "PROGRESSBARENDQUESTION": "QD1",
+        "DISABLE_SMART_PHONE_MOBILE_SUPPORT": false,
+        "DISABLE_SMART_PHONE_GRID_MOBILE_RENDERING": false,
+        "DISABLE_TABLET_MOBILE_SUPPORT": false,
+        "DISABLE_TABLET_GRID_MOBILE_RENDERING": false,
+        "AUTOSYNCHRONIZEPANELDATA": false,
+        "COLLECT_RESPONDENT_GEO_LOCATION": false,
+        "EXECUTE_ADVANCED_ACTIONS_ON_RESUME": true,
+        "SURVEY_OBJECTIVE": 5000,
+        "QUOTAS_ACTIVE": true,
+        "QUOTAS_IN_PERCENT": false,
+        "CLOSED_STRATA_RULE": "AllowInterviews",
+        "QUOTAS_SYNCHRONIZE": false,
+        "INPUT_REQUIRED": true,
+        "ALLOW_BACKWARD_JUMPS": true,
+        "AUTO_DATA_CLEANING": false,
+        "CLEAN_QUESTION_PRELOAD": false,
+        "ALLOW_OPEN_END_LOWER_CASE": true,
+        "QUIT_BUTTON_ACTION": "ExitSurvey",
+        "TERMINATION_ACTION": "DisplayMessage",
+        "QUOTA_ACTION": "DisplayMessageAndExit",
+        "COMPLETED_ACTION": "DisplayMessage",
+        "INTERRUPTED_ACTION": "None",
+        "SCREENEDOUT_ACTION": "DisplayMessage",
+        "INACTIVE_SURVEY_ACTION": "DisplayMessage",
+        "SURVEY_REACCESS_ACTION": "DisplayMessage",
+        "SURVEY_ACCESS_MODE": "OpenAccess",
+        "AUTO_GENERATE_PIN": false,
+        "ALLOW_SAVE_AND_CONTINUE": "NoCookie",
+        "PREVENT_SURVEY_INDEXING": false,
+        "SESSION_TIMEOUT": 30,
+        "ALLOW_CASE_CREATION_ON_MOBILE_DEVICES": true,
+        "AUTO_ADVANCE_MODE": "ByBlock",
+        "ENABLE_LEGACY_BROWSER_WARNING": false
+    },
+    "languages": [
+        "fr"
+    ],
+    "defaultLanguage": "fr",
+    "blocks": [
+        {
+            "id": 71,
+            "name": "Imported",
+            "settings": {
+                "DisplayShortcuts": true
+            },
+            "questions": [
+                {
+                    "id": 481,
+                    "name": "REGION_I",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": ":: variable importée ::<br>Région"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 618,
+                            "name": "REGION_I",
+                            "maxMention": 1,
+                            "choiceListId": 0,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                }
+            ],
+            "randomizations": [],
+            "skipLogic": "logic:adv;1 > 0"
+        },
+        {
+            "id": 74,
+            "name": "Questionnaire",
+            "settings": {
+                "AutoPageBreak": true,
+                "DisplayShortcuts": true
+            },
+            "questions": [
+                {
+                    "id": 484,
+                    "name": "INTRODUCTION",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "Description",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Variable between collection versions"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "preLoadActions": [
+                        {
+                            "properties": {
+                                "TelephonyAction": "TelephonyAction_Record"
+                            },
+                            "type": "TelephonyAction"
+                        }
+                    ],
+                    "variables": []
+                },
+                {
+                    "id": 649,
+                    "name": "RESPONDENT_METADATA",
+                    "settings": {
+                        "UserAgentVariableName": "META_USERAGENT",
+                        "OperatingSystemVariableName": "META_OPERATINGSYSTEM",
+                        "JavaSupportVariableName": "META_JAVASUPPORT",
+                        "BrowserLanguageVariableName": "META_BROWSER_LANGUAGE",
+                        "IpAddressVariableName": "META_IPADDRESS",
+                        "RefererVariableName": "META_REFERER"
+                    },
+                    "type": "RespondentMetaData",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Hidden question used to collect metadata information about the respondent such as its IP address, Browser, etc."
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 954,
+                            "name": "META_USERAGENT",
+                            "type": 1,
+                            "maxMention": 1,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 955,
+                            "name": "META_OPERATINGSYSTEM",
+                            "type": 1,
+                            "maxMention": 1,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 956,
+                            "name": "META_JAVASUPPORT",
+                            "type": 1,
+                            "maxMention": 1,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 957,
+                            "name": "META_BROWSER_LANGUAGE",
+                            "type": 1,
+                            "maxMention": 1,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 958,
+                            "name": "META_IPADDRESS",
+                            "type": 1,
+                            "maxMention": 1,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 959,
+                            "name": "META_REFERER",
+                            "type": 1,
+                            "maxMention": 1,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 487,
+                    "name": "Q1",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Dans lequel des groupes d'âge suivants vous situez-vous?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "postAnswerActions": [
+                        {
+                            "properties": {
+                                "Status": "ScreenedOut"
+                            },
+                            "type": "ExitSurvey",
+                            "condition": "logic:basic;Q1 = 01"
+                        }
+                    ],
+                    "variables": [
+                        {
+                            "id": 621,
+                            "name": "Q1",
+                            "maxMention": 1,
+                            "choiceListId": 1,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 490,
+                    "name": "Q2",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Dans quelle région administrative résidez-vous?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 624,
+                            "name": "Q2",
+                            "maxMention": 1,
+                            "choiceListId": 2,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 493,
+                    "name": "Q3_GRID",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "ChoiceGrid",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Dans quelle mesure faites-vous confiance aux institutions suivantes?"
+                        },
+                        "SHORT_TEXT": {},
+                        "ColumnTranslatableSettings": {
+                            "fr": "{\"Position\":0}"
+                        },
+                        "RowTranslatableSettings": {
+                            "fr": "{\"LeftLabel\":\"\",\"RightLabel\":\"\",\"OpenEndRowLabel\":\"\",\"Labels\":[],\"Position\":0}"
+                        }
+                    },
+                    "variables": [
+                        {
+                            "id": 627,
+                            "name": "Q3A",
+                            "maxMention": 1,
+                            "choiceListId": 3,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 628,
+                            "name": "Q3B",
+                            "maxMention": 1,
+                            "choiceListId": 3,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 629,
+                            "name": "Q3C",
+                            "maxMention": 1,
+                            "choiceListId": 3,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 645,
+                            "name": "Q3D",
+                            "maxMention": 1,
+                            "choiceListId": 3,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 646,
+                            "name": "Q3E",
+                            "maxMention": 1,
+                            "choiceListId": 3,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 647,
+                            "name": "Q3F",
+                            "maxMention": 1,
+                            "choiceListId": 3,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "settings": {
+                                "Fixed": true,
+                                "MergeCells": false,
+                                "MergeLeftLabel": false,
+                                "MergeRightLabel": false,
+                                "UseChoiceTexts": true
+                            },
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": ""
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Text",
+                            "position": 0
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "La police"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                3
+                            ],
+                            "position": 4
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Les médias traditionnels, tel que les journaux, la télévision ou la radio"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                4
+                            ],
+                            "position": 5
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Le conseil municipal de votre municipalité/ville"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                2
+                            ],
+                            "position": 3
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Le gouvernement fédéral"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                1
+                            ],
+                            "position": 2
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Les plateformes de médias sociaux"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                5
+                            ],
+                            "position": 6
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Le gouvernement provincial"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                0
+                            ],
+                            "position": 1
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "settings": {
+                                "Fixed": false
+                            },
+                            "translatedTexts": {},
+                            "type": "RadioButton",
+                            "position": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 496,
+                    "name": "Q4A",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Parmi les sources médiatiques suivantes, quelle est la source principale que vous utilisez pour vous informer au sujet de la politique en général?<br><br><em>Une seule réponse possible.</em>"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 660,
+                            "name": "Q4A",
+                            "maxMention": 1,
+                            "choiceListId": 4,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 499,
+                    "name": "Q4B",
+                    "settings": {
+                        "HideBackButton": false,
+                        "EliminationExcludedFields": "88",
+                        "EliminateChoicesIfVariablesAnswered": "Q4A",
+                        "DisplayOrder": "Vertical"
+                    },
+                    "type": "CheckBox",
+                    "translatedTexts": {
+                        "TITLE": {
+                            "fr": ""
+                        },
+                        "TEXT": {
+                            "fr": "Quelles sont les autres sources que vous utilisez pour vous informer au sujet de la politique en général?<br><br><em>Sélectionnez toutes les réponses qui s’appliquent.</em>"
+                        },
+                        "SHORT_TEXT": {
+                            "fr": ""
+                        },
+                        "CustomErrorMessage": {
+                            "fr": ""
+                        }
+                    },
+                    "variables": [
+                        {
+                            "id": 663,
+                            "name": "Q4B",
+                            "maxMention": 8,
+                            "choiceListId": 6,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ],
+                    "skipLogic": "logic:basic;(Q4A = 98 or Q4A = 99)"
+                },
+                {
+                    "id": 502,
+                    "name": "Q5_GRID",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "ChoiceGrid",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Pour chacune des sources médiatiques que vous avez identifiées, dans quelle mesure y faites-vous confiance?"
+                        },
+                        "SHORT_TEXT": {},
+                        "ColumnTranslatableSettings": {
+                            "fr": "{\"Position\":0}"
+                        },
+                        "RowTranslatableSettings": {
+                            "fr": "{\"LeftLabel\":\"\",\"RightLabel\":\"\",\"OpenEndRowLabel\":\"\",\"Labels\":[],\"Position\":0}"
+                        }
+                    },
+                    "variables": [
+                        {
+                            "id": 666,
+                            "name": "Q5A",
+                            "maxMention": 1,
+                            "choiceListId": 5,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 667,
+                            "name": "Q5B",
+                            "maxMention": 1,
+                            "choiceListId": 5,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 668,
+                            "name": "Q5C",
+                            "maxMention": 1,
+                            "choiceListId": 5,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 690,
+                            "name": "Q5D",
+                            "maxMention": 1,
+                            "choiceListId": 5,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 691,
+                            "name": "Q5E",
+                            "maxMention": 1,
+                            "choiceListId": 5,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 692,
+                            "name": "Q5F",
+                            "maxMention": 1,
+                            "choiceListId": 5,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 693,
+                            "name": "Q5G",
+                            "maxMention": 1,
+                            "choiceListId": 5,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 694,
+                            "name": "Q5H",
+                            "maxMention": 1,
+                            "choiceListId": 5,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 711,
+                            "name": "Q5I",
+                            "maxMention": 1,
+                            "choiceListId": 5,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Les médias sociaux : généralement ce que publient mes amis ou des membres de ma famille"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                4
+                            ],
+                            "skipLogic": "logic:basic;(Q4A != 05 and Q4B != 05)",
+                            "position": 5
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "La télévision"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                2
+                            ],
+                            "skipLogic": "logic:basic;(Q4A != 03 and Q4B != 03)",
+                            "position": 3
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "[Q4B.OpenEnd]"
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                8
+                            ],
+                            "skipLogic": "logic:basic;Q4B != 88",
+                            "position": 9
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "[Q4A.OpenEnd]"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                7
+                            ],
+                            "skipLogic": "logic:basic;Q4A != 88",
+                            "position": 8
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Les médias sociaux : généralement ce que publient des organismes de presse ou des journalistes"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                5
+                            ],
+                            "skipLogic": "logic:basic;(Q4A != 06 and Q4B != 06)",
+                            "position": 6
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Les journaux ou les magazines imprimés"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                0
+                            ],
+                            "skipLogic": "logic:basic;(Q4A != 01 and Q4B != 01)",
+                            "position": 1
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Autres contenus d’information en ligne (vidéos, podcasts, influenceurs)"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                6
+                            ],
+                            "skipLogic": "logic:basic;(Q4A != 07 and Q4B != 07)",
+                            "position": 7
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "La radio"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                3
+                            ],
+                            "skipLogic": "logic:basic;(Q4A != 04 and Q4B != 04)",
+                            "position": 4
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Les sites Web d’actualités ou les applications en ligne d’organismes de presse"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                1
+                            ],
+                            "skipLogic": "logic:basic;(Q4A != 02 and Q4B != 02)",
+                            "position": 2
+                        },
+                        {
+                            "settings": {
+                                "Fixed": true,
+                                "MergeCells": false,
+                                "MergeLeftLabel": false,
+                                "MergeRightLabel": false,
+                                "UseChoiceTexts": true
+                            },
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": ""
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Text",
+                            "position": 0
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "settings": {
+                                "Fixed": false
+                            },
+                            "translatedTexts": {},
+                            "type": "RadioButton",
+                            "position": 0
+                        }
+                    ],
+                    "skipLogic": "logic:basic;(Q4A = 98 or Q4A = 99)"
+                },
+                {
+                    "id": 505,
+                    "name": "Q6_GRID",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "ChoiceGrid",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Quant aux médias sociaux, à quelle fréquence consultez-vous …?"
+                        },
+                        "SHORT_TEXT": {},
+                        "ColumnTranslatableSettings": {
+                            "fr": "{\"Position\":0}"
+                        },
+                        "RowTranslatableSettings": {
+                            "fr": "{\"LeftLabel\":\"\",\"RightLabel\":\"\",\"OpenEndRowLabel\":\"\",\"Labels\":[],\"Position\":0}"
+                        }
+                    },
+                    "variables": [
+                        {
+                            "id": 714,
+                            "name": "Q6A",
+                            "maxMention": 1,
+                            "choiceListId": 7,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 715,
+                            "name": "Q6B",
+                            "maxMention": 1,
+                            "choiceListId": 7,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 716,
+                            "name": "Q6C",
+                            "maxMention": 1,
+                            "choiceListId": 7,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 723,
+                            "name": "Q6D",
+                            "maxMention": 1,
+                            "choiceListId": 7,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 724,
+                            "name": "Q6E",
+                            "maxMention": 1,
+                            "choiceListId": 7,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 725,
+                            "name": "Q6F",
+                            "maxMention": 1,
+                            "choiceListId": 7,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 726,
+                            "name": "Q6G",
+                            "maxMention": 1,
+                            "choiceListId": 7,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 727,
+                            "name": "Q6H",
+                            "maxMention": 1,
+                            "choiceListId": 7,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Instagram"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                3
+                            ],
+                            "position": 4
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "TikTok"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                4
+                            ],
+                            "position": 5
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "YouTube"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                5
+                            ],
+                            "position": 6
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "X (Twitter)"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                2
+                            ],
+                            "position": 3
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "BlueSky"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                6
+                            ],
+                            "position": 7
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Pinterest"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                1
+                            ],
+                            "position": 2
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Rumble"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                7
+                            ],
+                            "position": 8
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Facebook"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                0
+                            ],
+                            "position": 1
+                        },
+                        {
+                            "settings": {
+                                "Fixed": true,
+                                "MergeCells": false,
+                                "MergeLeftLabel": false,
+                                "MergeRightLabel": false,
+                                "UseChoiceTexts": true
+                            },
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": ""
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Text",
+                            "position": 0
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "settings": {
+                                "Fixed": false
+                            },
+                            "translatedTexts": {},
+                            "type": "RadioButton",
+                            "position": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 508,
+                    "name": "Q7",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Dans quelle mesure êtes-vous intéressé par la politique en général?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 754,
+                            "name": "Q7",
+                            "maxMention": 1,
+                            "choiceListId": 8,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 511,
+                    "name": "Q8_GRID",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "ChoiceGrid",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "À quel point est-il important pour vous de voter aux élections ...?<br><br><em>Répondre en utilisant l’échelle de 0 à 5 où 0 signifie « Pas du tout important » et 5 « Très important »</em>"
+                        },
+                        "SHORT_TEXT": {},
+                        "ColumnTranslatableSettings": {
+                            "fr": "{\"Position\":0}"
+                        },
+                        "RowTranslatableSettings": {
+                            "fr": "{\"LeftLabel\":\"\",\"RightLabel\":\"\",\"OpenEndRowLabel\":\"\",\"Labels\":[],\"Position\":0}"
+                        }
+                    },
+                    "variables": [
+                        {
+                            "id": 757,
+                            "name": "Q8_GRID_A1",
+                            "maxMention": 1,
+                            "choiceListId": 9,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 758,
+                            "name": "Q8_GRID_A2",
+                            "maxMention": 1,
+                            "choiceListId": 9,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 759,
+                            "name": "Q8_GRID_A3",
+                            "maxMention": 1,
+                            "choiceListId": 9,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Municipales"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                2
+                            ],
+                            "position": 3
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Provinciales"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                1
+                            ],
+                            "position": 2
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "Fédérales"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                0
+                            ],
+                            "position": 1
+                        },
+                        {
+                            "settings": {
+                                "Fixed": true,
+                                "MergeCells": false,
+                                "MergeLeftLabel": false,
+                                "MergeRightLabel": false,
+                                "UseChoiceTexts": true
+                            },
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": ""
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Text",
+                            "position": 0
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "settings": {
+                                "Fixed": false
+                            },
+                            "translatedTexts": {},
+                            "type": "RadioButton",
+                            "position": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 514,
+                    "name": "Q9",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "De quelle façon votez-vous habituellement?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 772,
+                            "name": "Q9",
+                            "maxMention": 1,
+                            "choiceListId": 10,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 517,
+                    "name": "Q10",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Si vous pouviez voter, sans avoir à vous déplacer, à l’aide d’un lien personnalisé et sécurisé fourni par un organisme reconnu et fiable, dans quelle mesure seriez-vous intéressé à utiliser cette méthode?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 775,
+                            "name": "Q10",
+                            "maxMention": 1,
+                            "choiceListId": 8,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 520,
+                    "name": "Q11",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Les prochaines questions portent sur les partis politiques fédéraux, donc du Canada.<br><br>Dans quelle mesure êtes-vous satisfait du gouvernement fédéral actuel?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 778,
+                            "name": "Q11",
+                            "maxMention": 1,
+                            "choiceListId": 11,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 523,
+                    "name": "Q12",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Les dernières élections fédérales ont eu lieu en septembre 2021.<br><br>Pour quel Parti politique aviez-vous voté en 2021?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 781,
+                            "name": "Q12",
+                            "maxMention": 1,
+                            "choiceListId": 12,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 526,
+                    "name": "Q13",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Quelle est la principale raison pour laquelle vous n'avez pas voté?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 784,
+                            "name": "Q13",
+                            "maxMention": 1,
+                            "choiceListId": 13,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ],
+                    "displayLogic": "logic:basic;Q12 = 98"
+                },
+                {
+                    "id": 529,
+                    "name": "Q14",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Si vous deviez voter aujourd’hui aux élections fédérales, pour quel parti voteriez-vous?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 787,
+                            "name": "Q14",
+                            "maxMention": 1,
+                            "choiceListId": 14,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 535,
+                    "name": "Q15",
+                    "settings": {
+                        "MaxAllowedAnswers": 3.0,
+                        "MinRequiredAnswers": 3.0,
+                        "HideBackButton": false,
+                        "DisplayOrder": "Vertical"
+                    },
+                    "type": "DragDropRanking",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Parmi les 5 éléments suivants, quelles devraient être les 3 priorités d’actions du gouvernement fédéral qui sera élu prochainement?<br><br><em>Veuillez glisser les trois (3) éléments choisis dans la case de droite en ordre d'importance (plus important en haut).</em>"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 802,
+                            "name": "Q15",
+                            "maxMention": 5,
+                            "choiceListId": 15,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 538,
+                    "name": "Q16",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Avez-vous une bonne ou une mauvaise opinion de Donald Trump?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 805,
+                            "name": "Q16",
+                            "maxMention": 1,
+                            "choiceListId": 16,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 541,
+                    "name": "Q17_GRID",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "ChoiceGrid",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Avec les menaces d'une hausse importante des tarifs douaniers sur les produits canadiens vendus aux États-Unis. Dans quelle mesure avez-vous confiance dans la capacité du Canada d'adopter des mesures pour protéger son économie?"
+                        },
+                        "SHORT_TEXT": {},
+                        "ColumnTranslatableSettings": {
+                            "fr": "{\"Position\":0}"
+                        },
+                        "RowTranslatableSettings": {
+                            "fr": "{\"LeftLabel\":\"\",\"RightLabel\":\"\",\"OpenEndRowLabel\":\"\",\"Labels\":[],\"Position\":0}"
+                        }
+                    },
+                    "variables": [
+                        {
+                            "id": 808,
+                            "name": "Q17",
+                            "maxMention": 1,
+                            "choiceListId": 17,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": ""
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                0
+                            ],
+                            "position": 1
+                        },
+                        {
+                            "settings": {
+                                "Fixed": true,
+                                "MergeCells": false,
+                                "MergeLeftLabel": false,
+                                "MergeRightLabel": false,
+                                "UseChoiceTexts": true
+                            },
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": ""
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Text",
+                            "position": 0
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "settings": {
+                                "Fixed": false
+                            },
+                            "translatedTexts": {},
+                            "type": "RadioButton",
+                            "position": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 544,
+                    "name": "Q18_GRID",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "ChoiceGrid",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Dans quelle mesure êtes-vous d’accord avec les énoncés suivants :<br><br><strong>L’arrivée au pouvoir de Donald Trump…</strong>"
+                        },
+                        "SHORT_TEXT": {},
+                        "ColumnTranslatableSettings": {
+                            "fr": "{\"Position\":0}"
+                        },
+                        "RowTranslatableSettings": {
+                            "fr": "{\"LeftLabel\":\"\",\"RightLabel\":\"\",\"OpenEndRowLabel\":\"\",\"Labels\":[],\"Position\":0}"
+                        }
+                    },
+                    "variables": [
+                        {
+                            "id": 819,
+                            "name": "Q18A",
+                            "maxMention": 1,
+                            "choiceListId": 18,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        },
+                        {
+                            "id": 820,
+                            "name": "Q18B",
+                            "maxMention": 1,
+                            "choiceListId": 18,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "settings": {
+                                "Fixed": true,
+                                "MergeCells": false,
+                                "MergeLeftLabel": false,
+                                "MergeRightLabel": false,
+                                "UseChoiceTexts": true
+                            },
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": ""
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Text",
+                            "position": 0
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "…représente un risque important pour les bonnes relations entre le Canada et les États-Unis"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                1
+                            ],
+                            "position": 2
+                        },
+                        {
+                            "translatedTexts": {
+                                "LeftLabel": {
+                                    "fr": "…m’inquiète car je crains qu’il ne mène une politique dangereuse pour la stabilité mondiale"
+                                },
+                                "RightLabel": {
+                                    "fr": ""
+                                },
+                                "OpenEndRowLabel": {
+                                    "fr": ""
+                                }
+                            },
+                            "type": "Variable",
+                            "variableIds": [
+                                0
+                            ],
+                            "position": 1
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "settings": {
+                                "Fixed": false
+                            },
+                            "translatedTexts": {},
+                            "type": "RadioButton",
+                            "position": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 547,
+                    "name": "QD1",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Laquelle des catégories suivantes correspond, pour l'année 2024, à votre revenu familial BRUT (avant impôts)?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 832,
+                            "name": "QD1",
+                            "maxMention": 1,
+                            "choiceListId": 19,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 646,
+                    "name": "QD3",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {
+                            "fr": ""
+                        },
+                        "TEXT": {
+                            "fr": "Quel est le plus haut niveau de scolarité que vous avez complété?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 951,
+                            "name": "QD3",
+                            "maxMention": 1,
+                            "choiceListId": 22,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                },
+                {
+                    "id": 643,
+                    "name": "QD2",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {
+                            "fr": ""
+                        },
+                        "TEXT": {
+                            "fr": "À quel genre vous identifiez-vous le plus?"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "variables": [
+                        {
+                            "id": 948,
+                            "name": "QD2",
+                            "maxMention": 1,
+                            "choiceListId": 21,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                }
+            ],
+            "randomizations": []
+        },
+        {
+            "id": 77,
+            "name": "Conclusion",
+            "settings": {
+                "AutoPageBreak": true,
+                "DisplayShortcuts": true
+            },
+            "questions": [
+                {
+                    "id": 550,
+                    "name": "COMPLETE",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "Description",
+                    "translatedTexts": {
+                        "TITLE": {},
+                        "TEXT": {
+                            "fr": "Variable between collection versions"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "preLoadActions": [
+                        {
+                            "properties": {
+                                "CallResultCodes": "CO"
+                            },
+                            "type": "FilterCallResults"
+                        },
+                        {
+                            "properties": {
+                                "Status": "Completed"
+                            },
+                            "type": "ExitSurvey",
+                            "condition": "logic:adv;1 > 0"
+                        }
+                    ],
+                    "variables": []
+                },
+                {
+                    "id": 553,
+                    "name": "SCREENED",
+                    "settings": {
+                        "HideBackButton": false
+                    },
+                    "type": "RadioButton",
+                    "translatedTexts": {
+                        "TITLE": {
+                            "fr": ""
+                        },
+                        "TEXT": {
+                            "fr": "<div class=\"question-display-text\">Variable between collection versions</div>"
+                        },
+                        "SHORT_TEXT": {}
+                    },
+                    "preLoadActions": [
+                        {
+                            "properties": {
+                                "Variable": "SCREENED",
+                                "ValueType": "Variable",
+                                "Value": "Q1",
+                                "MatrixIndex": "[$ROW]"
+                            },
+                            "type": "SetVariableValue"
+                        },
+                        {
+                            "properties": {
+                                "CallResultCodes": "DQ"
+                            },
+                            "type": "FilterCallResults"
+                        },
+                        {
+                            "properties": {
+                                "Status": "ScreenedOut"
+                            },
+                            "type": "ExitSurvey",
+                            "condition": "logic:adv;1 > 0"
+                        }
+                    ],
+                    "variables": [
+                        {
+                            "id": 835,
+                            "name": "SCREENED",
+                            "maxMention": 1,
+                            "choiceListId": 20,
+                            "choiceListRandomization": {},
+                            "translatedTexts": {}
+                        }
+                    ]
+                }
+            ],
+            "randomizations": []
+        }
+    ],
+    "choiceLists": [
+        [
+            {
+                "value": "1",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Montréal"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "2",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Québec"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "3",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Reste du Québec"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "9",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Test sample"
+                    }
+                },
+                "position": 4
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Moins de 18 ans"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "18 à 24 ans"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "25 à 34 ans"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "35 à 44 ans"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "05",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "45 à 54 ans"
+                    }
+                },
+                "position": 5
+            },
+            {
+                "value": "06",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "55 à 64 ans"
+                    }
+                },
+                "position": 6
+            },
+            {
+                "value": "07",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "65 ans et plus"
+                    }
+                },
+                "position": 7
+            },
+            {
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je préfère ne pas répondre"
+                    }
+                },
+                "position": 8
+            }
+        ],
+        [
+            {
+                "value": "08",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Abitibi-Témiscamingue"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Bas-Saint-Laurent"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Capitale-Nationale"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "17",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Centre-du-Québec"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "12",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Chaudière-Appalaches"
+                    }
+                },
+                "position": 5
+            },
+            {
+                "value": "09",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Côte-Nord"
+                    }
+                },
+                "position": 6
+            },
+            {
+                "value": "05",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Estrie"
+                    }
+                },
+                "position": 7
+            },
+            {
+                "value": "11",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Gaspésie / Îles-de-la-Madeleine"
+                    }
+                },
+                "position": 8
+            },
+            {
+                "value": "14",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Lanaudière"
+                    }
+                },
+                "position": 9
+            },
+            {
+                "value": "15",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Laurentides"
+                    }
+                },
+                "position": 10
+            },
+            {
+                "value": "13",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Laval"
+                    }
+                },
+                "position": 11
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Mauricie"
+                    }
+                },
+                "position": 12
+            },
+            {
+                "value": "16",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Montérégie"
+                    }
+                },
+                "position": 13
+            },
+            {
+                "value": "06",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Montréal"
+                    }
+                },
+                "position": 14
+            },
+            {
+                "value": "10",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Nord-du-Québec"
+                    }
+                },
+                "position": 15
+            },
+            {
+                "value": "07",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Outaouais"
+                    }
+                },
+                "position": 16
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Saguenay / Lac-Saint-Jean"
+                    }
+                },
+                "position": 17
+            }
+        ],
+        [
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "01",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Pas du tout confiance"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "02",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Peu confiance"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "03",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Assez confiance"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "04",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Beaucoup confiance"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "99",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je ne sais pas"
+                    }
+                },
+                "position": 5
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Les journaux ou les magazines imprimés"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Les sites Web d’actualités ou les applications en ligne d’organismes de presse"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "La télévision"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "La radio"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "05",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Les médias sociaux : généralement ce que publient mes amis ou des membres de ma famille"
+                    }
+                },
+                "position": 5
+            },
+            {
+                "value": "06",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Les médias sociaux : généralement ce que publient des organismes de presse ou des journalistes"
+                    }
+                },
+                "position": 6
+            },
+            {
+                "value": "07",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Autres contenus d’information en ligne (vidéos, podcasts, influenceurs)"
+                    }
+                },
+                "position": 7
+            },
+            {
+                "settings": {
+                    "OpenEndType": "Below",
+                    "MaxOpenEndLength": null,
+                    "MinOpenEndLength": null,
+                    "OpenEndHeight": "",
+                    "OpenEndWidth": "",
+                    "DisplayOpenEndOnlyWhenSelected": true,
+                    "EnforceOpenEnd": false,
+                    "OpenEndSize": "Full",
+                    "OpenEndLines": 2
+                },
+                "value": "88",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Autre, précisez :"
+                    }
+                },
+                "position": 8
+            },
+            {
+                "settings": {
+                    "Exclusive": true
+                },
+                "value": "98",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Aucune de ces sources; je n’ai pas d’intérêt pour les nouvelles."
+                    }
+                },
+                "position": 9
+            },
+            {
+                "settings": {
+                    "Exclusive": true
+                },
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je ne sais pas / Je préfère ne pas répondre"
+                    }
+                },
+                "position": 10
+            }
+        ],
+        [
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "01",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Pas de tout confiance"
+                    }
+                }
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "02",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Un peu confiance"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "03",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Confiance"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "04",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Très confiance"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "99",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je ne sais pas"
+                    }
+                },
+                "position": 4
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Les journaux ou les magazines imprimés"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Les sites Web d’actualités ou les applications en ligne d’organismes de presse"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "La télévision"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "La radio"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "05",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Les médias sociaux : généralement ce que publient mes amis ou des membres de ma famille"
+                    }
+                },
+                "position": 5
+            },
+            {
+                "value": "06",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Les médias sociaux : généralement ce que publient des organismes de presse ou des journalistes"
+                    }
+                },
+                "position": 6
+            },
+            {
+                "value": "07",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Autres contenus d’information en ligne (vidéos, podcasts, influenceurs)"
+                    }
+                },
+                "position": 7
+            },
+            {
+                "settings": {
+                    "OpenEndType": "Below",
+                    "MaxOpenEndLength": null,
+                    "MinOpenEndLength": null,
+                    "OpenEndHeight": "",
+                    "OpenEndWidth": "",
+                    "DisplayOpenEndOnlyWhenSelected": true,
+                    "EnforceOpenEnd": true,
+                    "OpenEndSize": "Full",
+                    "OpenEndLines": 2
+                },
+                "value": "88",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Autre, précisez :"
+                    }
+                },
+                "position": 8
+            },
+            {
+                "settings": {
+                    "Exclusive": true
+                },
+                "value": "98",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Aucune autre source à part : [Q4A.Answers][Q4A.OpenEnd]"
+                    }
+                },
+                "position": 9
+            },
+            {
+                "settings": {
+                    "Exclusive": true
+                },
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je ne sais pas / Je préfère ne pas répondre"
+                    }
+                },
+                "position": 10
+            }
+        ],
+        [
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "01",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Plusieurs fois par jou"
+                    }
+                }
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "02",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Une fois par jour"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "03",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Quelques fois par semaine"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "04",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Quelques fois par mois"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "05",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Moins souvent"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "06",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Jamais"
+                    }
+                },
+                "position": 5
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Pas du tout intéressé"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Peu intéressé"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Intéressé"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Très intéressé"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je ne sais pas"
+                    }
+                },
+                "position": 5
+            }
+        ],
+        [
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "01",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "<div>Pas du tout important</div><div>0</div>"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "02",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "1"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "03",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "2"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "04",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "3"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "05",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "4"
+                    }
+                },
+                "position": 5
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "06",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "<div>Très important</div><div>5</div>"
+                    }
+                },
+                "position": 6
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je préfère voter par anticipation à un bureau de vote"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je préfère voter le jour même des élections à un bureau de vote"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je ne vote pas ou je n’ai jamais voté"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je préfère ne pas répondre"
+                    }
+                },
+                "position": 4
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Pas du tout satisfait"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Peu satisfait"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Satisfait"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Très satisfait"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je ne sais pas"
+                    }
+                },
+                "position": 5
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Parti libéral du Canada (Chef du parti : Justin Trudeau)"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Parti conservateur du Canada (Chef du parti : Erin O'Toole)"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Nouveau Parti démocratique (NPD) (Chef du parti : Jagmeet Singh)"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Bloc Québécois (Chef du parti : Yves-François Blanchet)"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "05",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Parti Vert (Cheffe du parti : Annamie Paul)"
+                    }
+                },
+                "position": 5
+            },
+            {
+                "value": "06",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Parti populaire du Canada (Chef du parti : Maxime Bernier)"
+                    }
+                },
+                "position": 6
+            },
+            {
+                "settings": {
+                    "OpenEndType": "Below",
+                    "MaxOpenEndLength": null,
+                    "MinOpenEndLength": null,
+                    "OpenEndHeight": "",
+                    "OpenEndWidth": "",
+                    "DisplayOpenEndOnlyWhenSelected": true,
+                    "EnforceOpenEnd": false,
+                    "OpenEndSize": "Full",
+                    "OpenEndLines": 2
+                },
+                "value": "88",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Autre Parti, précisez :"
+                    }
+                },
+                "position": 7
+            },
+            {
+                "value": "97",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "J’étais indécis"
+                    }
+                },
+                "position": 8
+            },
+            {
+                "value": "98",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je n’ai pas voté"
+                    }
+                },
+                "position": 9
+            },
+            {
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je ne me souviens pas / Je ne sais pas"
+                    }
+                },
+                "position": 10
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "J'étais trop occupé / en déplacement / au travail"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Une maladie ou un handicap m'a empêché de le faire"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je n’avais pas de transport"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "05",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le bureau de vote n'était pas accessible (Fermé, éloigné, etc.)"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "06",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "En raison de mon âge, je n'avais pas le droit de vote en 2021"
+                    }
+                },
+                "position": 5
+            },
+            {
+                "value": "07",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "En raison de mon statut de citoyenneté, je n'avais pas le droit de vote en 2021"
+                    }
+                },
+                "position": 6
+            },
+            {
+                "settings": {
+                    "OpenEndType": "Below",
+                    "MaxOpenEndLength": null,
+                    "MinOpenEndLength": null,
+                    "OpenEndHeight": "",
+                    "OpenEndWidth": "",
+                    "DisplayOpenEndOnlyWhenSelected": true,
+                    "EnforceOpenEnd": false,
+                    "OpenEndSize": "Full",
+                    "OpenEndLines": 2
+                },
+                "value": "88",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Autre, veuillez préciser :"
+                    }
+                },
+                "position": 7
+            },
+            {
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je ne me souviens pas"
+                    }
+                },
+                "position": 8
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Parti libéral du Canada"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Parti conservateur du Canada"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Nouveau Parti démocratique (NPD)"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Bloc Québécois"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "05",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Parti Vert"
+                    }
+                },
+                "position": 5
+            },
+            {
+                "value": "06",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Le Parti populaire du Canada"
+                    }
+                },
+                "position": 6
+            },
+            {
+                "settings": {
+                    "OpenEndType": "Below",
+                    "MaxOpenEndLength": null,
+                    "MinOpenEndLength": null,
+                    "OpenEndHeight": "",
+                    "OpenEndWidth": "",
+                    "DisplayOpenEndOnlyWhenSelected": true,
+                    "EnforceOpenEnd": false,
+                    "OpenEndSize": "Full",
+                    "OpenEndLines": 2
+                },
+                "value": "88",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Autre Parti, précisez :"
+                    }
+                },
+                "position": 7
+            },
+            {
+                "value": "98",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je suis indécis"
+                    }
+                },
+                "position": 8
+            },
+            {
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je ne veux pas répondre"
+                    }
+                },
+                "position": 9
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Immigration"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Crise du logement"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Gestion des finances publiques"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Pension de vieillesse"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "05",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Environnement"
+                    }
+                },
+                "position": 5
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Une très mauvaise opinion"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Plutôt une mauvaise opinion"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Ni bonne, ni mauvaise opinion"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Plutôt une bonne opinion"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "05",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Une très bonne opinion"
+                    }
+                },
+                "position": 5
+            }
+        ],
+        [
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "01",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "<div>Pas du tout confiance</div><div>0</div>"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "02",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "1"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "03",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "2"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "04",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "3"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "05",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "4"
+                    }
+                },
+                "position": 5
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "06",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "5"
+                    }
+                },
+                "position": 6
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "07",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "6"
+                    }
+                },
+                "position": 7
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "08",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "7"
+                    }
+                },
+                "position": 8
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "09",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "8"
+                    }
+                },
+                "position": 9
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "10",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "9"
+                    }
+                },
+                "position": 10
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "11",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "<div>Tout à fait confiance</div><div>10</div>"
+                    }
+                },
+                "position": 11
+            }
+        ],
+        [
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "01",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Tout à fait en désaccord"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "02",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "En désaccord"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "settings": {
+                    "DisableColumns": ""
+                },
+                "value": "03",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "En accord"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Tout à fait en accord"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "99",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je ne sais pas"
+                    }
+                },
+                "position": 5
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Moins de 20 000 $"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "20 000 $ à 39 999 $"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "40 000 $ à 59 999 $"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "60 000 $ à 79 999 $"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "05",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "80 000 $ à 99 999 $"
+                    }
+                },
+                "position": 5
+            },
+            {
+                "value": "06",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "100 000 $ à 149 999 $"
+                    }
+                },
+                "position": 6
+            },
+            {
+                "value": "07",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "150 000 $ et plus"
+                    }
+                },
+                "position": 7
+            },
+            {
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je préfère ne pas répondre"
+                    }
+                },
+                "position": 8
+            }
+        ],
+        [
+            {
+                "settings": {
+                    "Visible": false
+                },
+                "value": "Q1",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Q1 - Moins de 18 ans"
+                    }
+                },
+                "position": 1
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Homme"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Femme"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je m'identifie autrement"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je préfère ne pas répondre"
+                    }
+                },
+                "position": 4
+            }
+        ],
+        [
+            {
+                "value": "01",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Aucune scolarité"
+                    }
+                },
+                "position": 1
+            },
+            {
+                "value": "02",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Secondaire"
+                    }
+                },
+                "position": 2
+            },
+            {
+                "value": "03",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Professionnel"
+                    }
+                },
+                "position": 3
+            },
+            {
+                "value": "04",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Collégial"
+                    }
+                },
+                "position": 4
+            },
+            {
+                "value": "05",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Universitaire"
+                    }
+                },
+                "position": 5
+            },
+            {
+                "value": "99",
+                "parentValue": "",
+                "translatedTexts": {
+                    "TEXT": {
+                        "fr": "Je préfère ne pas répondre"
+                    }
+                },
+                "position": 6
+            }
+        ]
+    ],
+    "questionStyles": [],
+    "shortcuts": [],
+    "randomizations": [],
+    "columns": {},
+    "surveyProperties": {},
+    "translatedTexts": {
+        "ClosedStrata": {
+            "fr": "Ce sondage est fermé pour l'instant"
+        },
+        "CompletedTerminationMessage": {
+            "fr": "Le sondage est terminé. Nous vous remercions de votre participation."
+        },
+        "FullQuota": {
+            "fr": "L'objectif pour ce sondage a été atteint"
+        },
+        "InactiveSurveyMessage": {
+            "fr": "Nous sommes désolés de vous informer que ce sondage est présentement inaccessible."
+        },
+        "IncompatibleChoices": {
+            "fr": "Les choix sont incompatibles"
+        },
+        "IncompleteAnswer": {
+            "fr": "La réponse est incomplète"
+        },
+        "InterruptedTerminationMessage": {
+            "fr": "Le sondage a été interrompu."
+        },
+        "InvalidAnswer": {
+            "fr": "La réponse n'est pas valide"
+        },
+        "InvalidCharactersMax": {
+            "fr": "Veuillez entrer au plus {max} caractères"
+        },
+        "InvalidCharactersMin": {
+            "fr": "Veuillez entrer au moins {min} caractères"
+        },
+        "InvalidChoicesMax": {
+            "fr": "Veuillez ne pas répondre à plus de {max} choix"
+        },
+        "InvalidChoicesMin": {
+            "fr": "Veuillez répondre à au moins {min} choix"
+        },
+        "InvalidCreditCard": {
+            "fr": "Le numéro de carte de crédit n'est pas valide"
+        },
+        "InvalidDate": {
+            "fr": "La date n'est pas valide"
+        },
+        "InvalidEmailAddress": {
+            "fr": "L'adresse courriel n'est pas valide"
+        },
+        "InvalidFileSize": {
+            "fr": "La taille du fichier est invalide"
+        },
+        "InvalidFileType": {
+            "fr": "Le type de fichier est invalide"
+        },
+        "InvalidNumber": {
+            "fr": "Le numéro n'est pas valide"
+        },
+        "InvalidRankingValue": {
+            "fr": "Veuillez attribuez une valeur entre {min} et {max} pour chaque élément de votre classement. Les valeurs ne peuvent pas être répétées."
+        },
+        "InvalidRecordNumber": {
+            "fr": "L'ID de fiche n'est pas valide"
+        },
+        "InvalidTextFormat": {
+            "fr": "Le format de réponse n'est pas valide"
+        },
+        "InvalidTimeForDate": {
+            "fr": "L'heure choisie n'est pas disponible pour cette date"
+        },
+        "LegacyBrowserWarning": {
+            "fr": "Vous avez ouvert votre sondage dans un ancien navigateur. Nous vous recommandons fortement de passer à un navigateur moderne comme Chrome ou Firefox pour une expérience optimale. "
+        },
+        "LockedRecord": {
+            "fr": "Cette fiche est actuellement verrouillée par un autre utilisateur"
+        },
+        "LowerBoundNotFulfilled": {
+            "fr": "La valeur de la réponse devrait être supérieure ou égale à {min}"
+        },
+        "MobileDeviceMessage": {
+            "fr": "Nous sommes désolés mais l'appareil que vous utilisez n'est pas supporté"
+        },
+        "OutOfBounds": {
+            "fr": "La réponse est hors limite"
+        },
+        "PageHasErrors": {
+            "fr": "La page contient des erreurs"
+        },
+        "PreviewModeMessage": {
+            "fr": "Aucune donnée ne sera enregistrée."
+        },
+        "QuotaMetClosedMessage": {
+            "fr": "Nous sommes désolés de vous informer que ce sondage est présentement fermé. Nous vous remercions de votre temps."
+        },
+        "RespondentAccessExpired": {
+            "fr": "Nous avons le regret de vous informer que votre accès au sondage a expiré."
+        },
+        "ScreenedOutTerminationMessage": {
+            "fr": "Malheuresement vous devez être agé de 18 ans ou plus pour participer au sondage. Merci de votre temps."
+        },
+        "SurveyLoadingMessage": {
+            "fr": "Svp, veuillez patienter pendant que votre sondage se charge. Cette page se rafraichira automatiquement et votre sondage s'affichera dès que possible."
+        },
+        "SurveyReaccessMessage": {
+            "fr": "Nous sommes désolés de vous informer que vous ne pouvez réaccéder à ce sondage."
+        },
+        "TabletDeviceMessage": {
+            "fr": "Nous sommes désolés mais l'appareil que vous utilisez n'est pas supporté"
+        },
+        "TerminationMessage": {
+            "fr": "Merci de votre participation."
+        },
+        "TimerTerminationMessage": {
+            "fr": "Le sondage a expiré. Nous vous remercions de votre participation."
+        },
+        "UnavailableDate": {
+            "fr": "La date n'est pas disponible"
+        },
+        "UnknownDeviceMessage": {
+            "fr": "Nous sommes désolés mais l'appareil que vous utilisez n'est pas supporté"
+        },
+        "UnsupportedDeviceMessage": {
+            "fr": "Nous sommes désolés mais l'appareil que vous utilisez n'est pas supporté"
+        },
+        "UpperBoundNotFulfilled": {
+            "fr": "La valeur de la réponse devrait être inférieure ou égale à {max}"
+        },
+        "UnexpectedError": {
+            "fr": "Désolé, une erreur inattendue s'est produite."
+        }
+    },
+    "theme": {
+        "id": 21,
+        "name": "LiveBetaTest_Version2",
+        "settings": {
+            "ActiveHighlightValue": 0.3,
+            "BackButtonDefaultIcon": "fas caret-left",
+            "BackButtonIcon": "fas caret-left",
+            "BackButtonIconOnHover": false,
+            "BackButtonType": "text",
+            "BackButtonVisible": true,
+            "BaseFontSize": 18,
+            "BorderRadius": 15,
+            "BorderWidth": 1,
+            "CheckBoxIconAlignment": "left",
+            "CheckBoxIconType": "default",
+            "ChoiceHeight": 60,
+            "ChoiceSpacing": 27,
+            "ChoiceListIconAlignment": "left",
+            "ChoiceListBackgroundBorderWidth": 1,
+            "ChoiceListBackgroundBorderRadius": 15,
+            "ChoiceListBackgroundAlpha": 1,
+            "ControlAlpha": 1,
+            "ControlBackground": "#F0EFEF",
+            "ControlBorderColor": "#DBDBDB",
+            "DisplayChoiceIcon": "left",
+            "EnableBacklink": false,
+            "ErrorColor": "#F41134",
+            "FieldBorderValue": 0.5,
+            "FontSize": 18,
+            "ForegroundColorDark": "#555555",
+            "ForegroundColorLight": "#FFFFFF",
+            "GridCellMinHeight": 42,
+            "GridCellMinWidth": 56,
+            "GridCellPadding": 8,
+            "HeaderSizes": {
+                "H1": 1.2777777777777777,
+                "H2": 1,
+                "H3": 0.88888888888888884,
+                "H4": 0.77777777777777779
+            },
+            "HrSpacing": 90,
+            "InputBackground": "#FFFFFF",
+            "InputHeight": 40,
+            "InputMaxWidths": {
+                "XSmall": 80,
+                "Small": 130,
+                "Medium": 260,
+                "Large": 390
+            },
+            "InputMinWidths": {
+                "XSmall": 60,
+                "Small": 120,
+                "Medium": 190,
+                "Large": 300,
+                "Full": 120
+            },
+            "LanguageSelectorVisible": false,
+            "LanguageSelectorLabelActive": true,
+            "LineHeight": 29,
+            "LogoAlign": "left",
+            "LogoDescription": "Logo",
+            "NextButtonDefaultIcon": "fas caret-right",
+            "NextButtonIcon": "fas caret-right",
+            "NextButtonIconOnHover": false,
+            "NextButtonType": "text",
+            "OptionHeight": 40,
+            "PageBackground": "#ffffff",
+            "PageWrapperBackground": "rgba(255,255,255,0)",
+            "PageWrapperMaxWidth": 1200,
+            "PrimaryColor": "#b5121b",
+            "ProgressBarFontSize": 11,
+            "ProgressBarHeight": 5,
+            "ProgressBarDisplay": "top",
+            "ProgressBarType": "discrete",
+            "ProgressBarShowValue": true,
+            "ProgressBarVisible": true,
+            "QuestionSpacing": {
+                "PageHeader": 8,
+                "PageFooter": 8,
+                "BetweenComponents": 8,
+                "WithinComponents": 4
+            },
+            "QuitButtonDefaultIcon": "fas sign-out",
+            "QuitButtonIcon": "fas sign-out",
+            "QuitButtonIconOnHover": false,
+            "QuitButtonType": "textAndIcon",
+            "QuitButtonVisible": false,
+            "RadioIconAlignment": "left",
+            "RadioIconType": "default",
+            "SecondaryColor": "#cfccd3",
+            "ShowCheckboxSettings": true,
+            "ShowRadioSettings": true,
+            "ShowStatementBackgroundSettings": true,
+            "SliderHandleSize": 38,
+            "SliderRailHeight": 10,
+            "StatementBackgroundAlpha": 1,
+            "SubmitButtonDefaultIcon": "fas paper-plane",
+            "SubmitButtonIcon": "fas paper-plane",
+            "SubmitButtonIconOnHover": false,
+            "SubmitButtonType": "text",
+            "SubmitButtonVisible": true,
+            "TextFont": "Open Sans",
+            "TextFontSize": "16",
+            "TextFontVariant": "regular",
+            "TextTextAlign": "left",
+            "TickedImageUrl": "",
+            "TickedRadioImageUrl": "",
+            "TitleFont": "Open Sans",
+            "TitleFontSize": "18",
+            "TitleFontVariant": "600",
+            "TitleTextAlign": "left",
+            "TopNavigationPosition": "wrapper",
+            "UntickedImageUrl": "",
+            "UntickedRadioImageUrl": "",
+            "ViewResponsesButtonVisible": false,
+            "ContentResponsivenessOption": "resize-carousel",
+            "NeutralDarkColor": "#727272",
+            "NeutralLightColor": "#F0EFEF",
+            "BlackColor": "#000000",
+            "WhiteColor": "#FFFFFF",
+            "NoColor": null,
+            "LanguageSelectorPlacement": "top-right",
+            "ViewResponsesButtonPlacement": "top-right",
+            "BackButtonPlacement": "bottom-left",
+            "SubmitButtonPlacement": "bottom-right",
+            "NextButtonPlacement": "bottom-right",
+            "QuitButtonPlacement": "bottom-center",
+            "CustomBorderValue": false,
+            "BackButtonDisplayBothTopBottom": false,
+            "SubmitButtonDisplayBothTopBottom": false,
+            "NextButtonDisplayBothTopBottom": false,
+            "QuitButtonDisplayBothTopBottom": false,
+            "PaddingTheme": "compact",
+            "DynamicCss": {
+                "HasGridChanges": true,
+                "TableRowDefaultTabBackground": "duoChrome",
+                "TableRowActiveTab": "tab-default",
+                "TableRowDefaultTabFillPrimaryColor": "WhiteColor",
+                "TableRowDefaultTabFillPrimaryColorPercent": "100",
+                "TableRowDefaultTabFillSecondaryColor": "NeutralLightColor",
+                "TableRowDefaultTabFillSecondaryColorPercent": "100",
+                "TableRowBorderStyle": "center-h",
+                "TableRowBorderThickness": "light-solid",
+                "TableRowBorderColor": "NeutralLightColor",
+                "TableRowBorderColorPercent": "100",
+                "TableRowHoverTabColor": "NoColor",
+                "TableRowHoverTabColorPercent": "100",
+                "TableRowSelectedTabColor": "PrimaryColor",
+                "TableRowSelectedTabColorPercent": "100",
+                "TableHeaderFillColor": "WhiteColor",
+                "TableHeaderFillColorPercent": "100",
+                "TableHeaderBorderStyle": "none",
+                "TableHeaderBorderThickness": "light-solid",
+                "TableHeaderBorderColor": "BlackColor",
+                "TableHeaderBorderColorPercent": "100"
+            },
+            "CarrouselCornerBorderColor": "NeutralLightColor",
+            "CarrouselCornerBorderColorPercent": "100",
+            "NextButtonIconHover": true,
+            "BackButtonIconHover": true,
+            "SubmitButtonIconHover": true,
+            "IsStaticCssChanged": true,
+            "CurrentColorPickerColor": "#cfccd3",
+            "CurrentColorPicker": "secondary"
+        },
+        "translatedTexts": {
+            "BackButton": {
+                "fr": "Retour"
+            },
+            "NextButton": {
+                "fr": "Suivant"
+            },
+            "QuitButton": {
+                "fr": "Quitter"
+            },
+            "SubmitButton": {
+                "fr": "Soumettre"
+            },
+            "PageHeader": {
+                "fr": "<img src=\"http://opinion.ciblerecherche.com/MEDIA/3/Cible_logo_transparent_small.png\" style=\"display: inline-block; vertical-align: bottom; margin-right: 5px; margin-left: 5px; max-width: calc(100% - 10px); text-align: center; width: 101px;\">"
+            },
+            "PageFooter": {
+                "fr": ""
+            },
+            "DropdownEmptyAnswer": {
+                "fr": "Choisir une réponse..."
+            },
+            "SliderNoAnswer": {
+                "fr": "Non-réponse"
+            },
+            "LanguageSelector": {
+                "fr": "Langue"
+            },
+            "AutoCompleteMaxResults": {
+                "fr": "Limité à {max} résultats"
+            },
+            "PrintResponsesButton": {
+                "fr": "Voir les réponses"
+            },
+            "BrowseFiles": {
+                "fr": "Naviguer dans les fichiers"
+            },
+            "DragDropFiles": {
+                "fr": "Glisser-déposer des fichiers"
+            },
+            "SurveyTitle": {
+                "fr": "LiveBetaTest_Version2"
+            },
+            "AcknowledgementButton": {
+                "fr": "Ok !"
+            }
+        }
+    }
+}
